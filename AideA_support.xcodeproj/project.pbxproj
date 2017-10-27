@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73341FA23ED6009C86CB /* AppDelegate.swift */; };
-		A28F73371FA23ED6009C86CB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73361FA23ED6009C86CB /* FirstViewController.swift */; };
-		A28F73391FA23ED6009C86CB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73381FA23ED6009C86CB /* SecondViewController.swift */; };
 		A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28F733A1FA23ED6009C86CB /* Main.storyboard */; };
 		A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28F733D1FA23ED6009C86CB /* Assets.xcassets */; };
 		A28F73411FA23ED6009C86CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */; };
 		A28F734C1FA23ED6009C86CB /* AideA_supportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F734B1FA23ED6009C86CB /* AideA_supportTests.swift */; };
 		A28F73571FA23ED6009C86CB /* AideA_supportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73561FA23ED6009C86CB /* AideA_supportUITests.swift */; };
+		A2B183E81FA2ABC2006A88E3 /* Makinas-Scrap-5.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */; };
+		A2B183E91FA2ABC2006A88E3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B183E51FA2ABC1006A88E3 /* QRViewController.swift */; };
+		A2B183EA1FA2ABC2006A88E3 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */; };
+		A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */; };
+		A2B1842D1FA2BC62006A88E3 /* AlphabetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */; };
+		A2B184361FA2EDCE006A88E3 /* ListDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B184341FA2EDCE006A88E3 /* ListDictionary.json */; };
+		A2B184371FA2EDCE006A88E3 /* ListTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B184351FA2EDCE006A88E3 /* ListTheme.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,6 @@
 /* Begin PBXFileReference section */
 		A28F73311FA23ED6009C86CB /* AideA_support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AideA_support.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73341FA23ED6009C86CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A28F73361FA23ED6009C86CB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A28F73381FA23ED6009C86CB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A28F733B1FA23ED6009C86CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A28F733D1FA23ED6009C86CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28F73401FA23ED6009C86CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 		A28F73521FA23ED6009C86CB /* AideA_supportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AideA_supportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73561FA23ED6009C86CB /* AideA_supportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AideA_supportUITests.swift; sourceTree = "<group>"; };
 		A28F73581FA23ED6009C86CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Makinas-Scrap-5.otf"; sourceTree = "<group>"; };
+		A2B183E51FA2ABC1006A88E3 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCell.swift; sourceTree = "<group>"; };
+		A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlphabetCell.xib; sourceTree = "<group>"; };
+		A2B184341FA2EDCE006A88E3 /* ListDictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListDictionary.json; sourceTree = "<group>"; };
+		A2B184351FA2EDCE006A88E3 /* ListTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListTheme.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				A28F73341FA23ED6009C86CB /* AppDelegate.swift */,
-				A28F73361FA23ED6009C86CB /* FirstViewController.swift */,
-				A28F73381FA23ED6009C86CB /* SecondViewController.swift */,
 				A28F733A1FA23ED6009C86CB /* Main.storyboard */,
+				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
+				A2B184341FA2EDCE006A88E3 /* ListDictionary.json */,
+				A2B184351FA2EDCE006A88E3 /* ListTheme.json */,
+				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
 				A28F733D1FA23ED6009C86CB /* Assets.xcassets */,
 				A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */,
+				A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */,
+				A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */,
+				A2B183E51FA2ABC1006A88E3 /* QRViewController.swift */,
 				A28F73421FA23ED6009C86CB /* Info.plist */,
 			);
 			path = AideA_support;
@@ -235,8 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B1842D1FA2BC62006A88E3 /* AlphabetCell.xib in Resources */,
+				A2B184361FA2EDCE006A88E3 /* ListDictionary.json in Resources */,
 				A28F73411FA23ED6009C86CB /* LaunchScreen.storyboard in Resources */,
 				A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */,
+				A2B183E81FA2ABC2006A88E3 /* Makinas-Scrap-5.otf in Resources */,
+				A2B184371FA2EDCE006A88E3 /* ListTheme.json in Resources */,
 				A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28F73391FA23ED6009C86CB /* SecondViewController.swift in Sources */,
 				A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */,
-				A28F73371FA23ED6009C86CB /* FirstViewController.swift in Sources */,
+				A2B183EA1FA2ABC2006A88E3 /* DictionaryViewController.swift in Sources */,
+				A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */,
+				A2B183E91FA2ABC2006A88E3 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
