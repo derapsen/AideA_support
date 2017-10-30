@@ -8,7 +8,6 @@ target 'AideA_support' do
   # Pods for AideA_support
 
   pod 'RealmSwift'
-  pod 'SwiftyJSON'
 
   target 'AideA_supportTests' do
     inherit! :search_paths

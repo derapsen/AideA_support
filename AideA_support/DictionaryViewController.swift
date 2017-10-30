@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DictionaryViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
 {
     @IBOutlet weak var alphabetsCollectionView: UICollectionView!
     
-    var tests = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "z", "_", "%"]
+    var tests = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "z", "?", "*"]
     
     override func viewDidLoad()
     {
@@ -23,6 +24,7 @@ class DictionaryViewController: UIViewController, UICollectionViewDataSource, UI
         self.alphabetsCollectionView.register(nibAlphabet, forCellWithReuseIdentifier: "alphabetCell")
         
         self.alphabetsCollectionView.backgroundColor = UIColor.clear
+        
         
     }
 
@@ -53,4 +55,3 @@ class DictionaryViewController: UIViewController, UICollectionViewDataSource, UI
     
     
 }
-

@@ -8,12 +8,13 @@
 
 import UIKit
 
-class AlphabetCell: UICollectionViewCell {
-
+class AlphabetCell: UICollectionViewCell
+{
     @IBOutlet weak var lblAlphabet: UILabel!
-    override func awakeFromNib() {
+    
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
         // Initialization code
     }
-
 }

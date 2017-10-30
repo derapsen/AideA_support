@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		27C875D264AC2E60AADD7812 /* Pods_AideA_supportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4189C0394871D2AA1E86FD /* Pods_AideA_supportUITests.framework */; };
 		67BDF052CBBEC83BC9A4E780 /* Pods_AideA_support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080D4929F3E9BB6846F63A89 /* Pods_AideA_support.framework */; };
+		A220A41D1FA6C10A00C6AF99 /* ModelListDictionary.realm in Resources */ = {isa = PBXBuildFile; fileRef = A220A41B1FA6C0E900C6AF99 /* ModelListDictionary.realm */; };
+		A220A41E1FA6C10A00C6AF99 /* ModelListTheme.realm in Resources */ = {isa = PBXBuildFile; fileRef = A220A41C1FA6C0E900C6AF99 /* ModelListTheme.realm */; };
 		A22BBE8A1FA322C900B05908 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22BBE8C1FA322C900B05908 /* RealmSwift.framework */; };
 		A22BBE8B1FA322C900B05908 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22BBE8D1FA322C900B05908 /* SwiftyJSON.framework */; };
+		A24EE7601FA5E9340025DCE2 /* WordDictionaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24EE75F1FA5E9340025DCE2 /* WordDictionaryModel.swift */; };
+		A281D2AB1FA5FA2100283897 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A281D2AC1FA5FA2100283897 /* ObjectMapper.framework */; };
 		A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73341FA23ED6009C86CB /* AppDelegate.swift */; };
 		A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28F733A1FA23ED6009C86CB /* Main.storyboard */; };
 		A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28F733D1FA23ED6009C86CB /* Assets.xcassets */; };
@@ -22,8 +26,6 @@
 		A2B183EA1FA2ABC2006A88E3 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */; };
 		A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */; };
 		A2B1842D1FA2BC62006A88E3 /* AlphabetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */; };
-		A2B184361FA2EDCE006A88E3 /* ListDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B184341FA2EDCE006A88E3 /* ListDictionary.json */; };
-		A2B184371FA2EDCE006A88E3 /* ListTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B184351FA2EDCE006A88E3 /* ListTheme.json */; };
 		D6B36BA94E08F784D2AB24FA /* Pods_AideA_supportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A8EB5191B15E98A6FE63F6 /* Pods_AideA_supportTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +54,12 @@
 		54F02C45B7B6D6699A971531 /* Pods-AideA_supportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AideA_supportTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AideA_supportTests/Pods-AideA_supportTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C712090743CD6CE444462CE /* Pods-AideA_supportUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AideA_supportUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AideA_supportUITests/Pods-AideA_supportUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99A8EB5191B15E98A6FE63F6 /* Pods_AideA_supportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AideA_supportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A220A41B1FA6C0E900C6AF99 /* ModelListDictionary.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModelListDictionary.realm; sourceTree = "<group>"; };
+		A220A41C1FA6C0E900C6AF99 /* ModelListTheme.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModelListTheme.realm; sourceTree = "<group>"; };
 		A22BBE8C1FA322C900B05908 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22BBE8D1FA322C900B05908 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24EE75F1FA5E9340025DCE2 /* WordDictionaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDictionaryModel.swift; sourceTree = "<group>"; };
+		A281D2AC1FA5FA2100283897 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73311FA23ED6009C86CB /* AideA_support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AideA_support.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73341FA23ED6009C86CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A28F733B1FA23ED6009C86CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,8 +77,6 @@
 		A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCell.swift; sourceTree = "<group>"; };
 		A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlphabetCell.xib; sourceTree = "<group>"; };
-		A2B184341FA2EDCE006A88E3 /* ListDictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListDictionary.json; sourceTree = "<group>"; };
-		A2B184351FA2EDCE006A88E3 /* ListTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListTheme.json; sourceTree = "<group>"; };
 		D6D47231A5252EC0FE6928A6 /* Pods-AideA_support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AideA_support.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AideA_support/Pods-AideA_support.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4189C0394871D2AA1E86FD /* Pods_AideA_supportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AideA_supportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A281D2AB1FA5FA2100283897 /* ObjectMapper.framework in Frameworks */,
 				A22BBE8A1FA322C900B05908 /* RealmSwift.framework in Frameworks */,
 				A22BBE8B1FA322C900B05908 /* SwiftyJSON.framework in Frameworks */,
 				67BDF052CBBEC83BC9A4E780 /* Pods_AideA_support.framework in Frameworks */,
@@ -110,6 +115,7 @@
 		502D9A0E9820AA565E9AAD09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A281D2AC1FA5FA2100283897 /* ObjectMapper.framework */,
 				A22BBE8C1FA322C900B05908 /* RealmSwift.framework */,
 				A22BBE8D1FA322C900B05908 /* SwiftyJSON.framework */,
 				080D4929F3E9BB6846F63A89 /* Pods_AideA_support.framework */,
@@ -147,10 +153,11 @@
 				A28F73341FA23ED6009C86CB /* AppDelegate.swift */,
 				A28F733A1FA23ED6009C86CB /* Main.storyboard */,
 				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
-				A2B184341FA2EDCE006A88E3 /* ListDictionary.json */,
-				A2B184351FA2EDCE006A88E3 /* ListTheme.json */,
+				A24EE75F1FA5E9340025DCE2 /* WordDictionaryModel.swift */,
 				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
 				A28F733D1FA23ED6009C86CB /* Assets.xcassets */,
+				A220A41B1FA6C0E900C6AF99 /* ModelListDictionary.realm */,
+				A220A41C1FA6C0E900C6AF99 /* ModelListTheme.realm */,
 				A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */,
 				A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */,
 				A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */,
@@ -307,12 +314,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A220A41D1FA6C10A00C6AF99 /* ModelListDictionary.realm in Resources */,
+				A220A41E1FA6C10A00C6AF99 /* ModelListTheme.realm in Resources */,
 				A2B1842D1FA2BC62006A88E3 /* AlphabetCell.xib in Resources */,
-				A2B184361FA2EDCE006A88E3 /* ListDictionary.json in Resources */,
 				A28F73411FA23ED6009C86CB /* LaunchScreen.storyboard in Resources */,
 				A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */,
 				A2B183E81FA2ABC2006A88E3 /* Makinas-Scrap-5.otf in Resources */,
-				A2B184371FA2EDCE006A88E3 /* ListTheme.json in Resources */,
 				A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +486,7 @@
 				A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */,
 				A2B183EA1FA2ABC2006A88E3 /* DictionaryViewController.swift in Sources */,
 				A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */,
+				A24EE7601FA5E9340025DCE2 /* WordDictionaryModel.swift in Sources */,
 				A2B183E91FA2ABC2006A88E3 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
