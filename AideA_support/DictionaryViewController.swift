@@ -25,6 +25,23 @@ class DictionaryViewController: UIViewController, UICollectionViewDataSource, UI
         
         self.alphabetsCollectionView.backgroundColor = UIColor.clear
         
+        self.loadSeedRealm()
+    }
+    
+    func loadSeedRealm()
+    {
+        let config = Realm.Configuration(
+            // アプリケーションバンドルのパスを設定します
+            fileURL: Bundle.main.url(forResource: "DictionaryDB", withExtension: "realm"),
+            // アプリケーションバンドルは書き込み不可なので、読み込み専用に設定します。
+            readOnly: true)
+        // RealmをConfigurationオブジェクト使って作成します
+        let realm = try! Realm(configuration: config)
+        print(realm)
+        // バンドルのRealmからデータを取得します
+        let results = realm.objects(DictionaryModel.self).first
+        
+        print(results)
         
     }
 
