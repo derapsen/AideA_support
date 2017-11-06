@@ -12,9 +12,10 @@
 		A215DAC01FA81D09007ADA40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A215DABF1FA81D09007ADA40 /* Foundation.framework */; };
 		A22BBE8A1FA322C900B05908 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22BBE8C1FA322C900B05908 /* RealmSwift.framework */; };
 		A25141171FA84BFE00E03309 /* DictionaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25141131FA84BFE00E03309 /* DictionaryModel.swift */; };
-		A25141191FA84BFE00E03309 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25141151FA84BFE00E03309 /* ThemeModel.swift */; };
 		A251411A1FA84C1600E03309 /* DictionaryDB.realm in Resources */ = {isa = PBXBuildFile; fileRef = A25141121FA84BFE00E03309 /* DictionaryDB.realm */; };
-		A251411B1FA84C1600E03309 /* ThemeDB.realm in Resources */ = {isa = PBXBuildFile; fileRef = A25141141FA84BFE00E03309 /* ThemeDB.realm */; };
+		A251411D1FA97ABF00E03309 /* OperationAlphabets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */; };
+		A251415C1FA9997100E03309 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251415A1FA9997100E03309 /* WordCell.swift */; };
+		A251415D1FA9997100E03309 /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A251415B1FA9997100E03309 /* WordCell.xib */; };
 		A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73341FA23ED6009C86CB /* AppDelegate.swift */; };
 		A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28F733A1FA23ED6009C86CB /* Main.storyboard */; };
 		A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28F733D1FA23ED6009C86CB /* Assets.xcassets */; };
@@ -59,8 +60,9 @@
 		A22BBE8D1FA322C900B05908 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25141121FA84BFE00E03309 /* DictionaryDB.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = DictionaryDB.realm; sourceTree = "<group>"; };
 		A25141131FA84BFE00E03309 /* DictionaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryModel.swift; sourceTree = "<group>"; };
-		A25141141FA84BFE00E03309 /* ThemeDB.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThemeDB.realm; sourceTree = "<group>"; };
-		A25141151FA84BFE00E03309 /* ThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAlphabets.swift; sourceTree = "<group>"; };
+		A251415A1FA9997100E03309 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		A251415B1FA9997100E03309 /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
 		A281D2AC1FA5FA2100283897 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73311FA23ED6009C86CB /* AideA_support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AideA_support.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73341FA23ED6009C86CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,18 +155,19 @@
 			isa = PBXGroup;
 			children = (
 				A28F73341FA23ED6009C86CB /* AppDelegate.swift */,
-				A28F733A1FA23ED6009C86CB /* Main.storyboard */,
-				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
-				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
-				A28F733D1FA23ED6009C86CB /* Assets.xcassets */,
-				A25141121FA84BFE00E03309 /* DictionaryDB.realm */,
-				A25141131FA84BFE00E03309 /* DictionaryModel.swift */,
-				A25141141FA84BFE00E03309 /* ThemeDB.realm */,
-				A25141151FA84BFE00E03309 /* ThemeModel.swift */,
-				A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */,
-				A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */,
-				A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */,
 				A2B183E51FA2ABC1006A88E3 /* QRViewController.swift */,
+				A2B183E61FA2ABC2006A88E3 /* DictionaryViewController.swift */,
+				A28F733A1FA23ED6009C86CB /* Main.storyboard */,
+				A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */,
+				A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */,
+				A28F733D1FA23ED6009C86CB /* Assets.xcassets */,
+				A25141131FA84BFE00E03309 /* DictionaryModel.swift */,
+				A25141121FA84BFE00E03309 /* DictionaryDB.realm */,
+				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
+				A251415A1FA9997100E03309 /* WordCell.swift */,
+				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
+				A251415B1FA9997100E03309 /* WordCell.xib */,
+				A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */,
 				A28F73421FA23ED6009C86CB /* Info.plist */,
 			);
 			path = AideA_support;
@@ -318,11 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A251411A1FA84C1600E03309 /* DictionaryDB.realm in Resources */,
-				A251411B1FA84C1600E03309 /* ThemeDB.realm in Resources */,
 				A2B1842D1FA2BC62006A88E3 /* AlphabetCell.xib in Resources */,
 				A28F73411FA23ED6009C86CB /* LaunchScreen.storyboard in Resources */,
 				A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */,
 				A2B183E81FA2ABC2006A88E3 /* Makinas-Scrap-5.otf in Resources */,
+				A251415D1FA9997100E03309 /* WordCell.xib in Resources */,
 				A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,8 +491,9 @@
 			files = (
 				A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */,
 				A2B183EA1FA2ABC2006A88E3 /* DictionaryViewController.swift in Sources */,
+				A251415C1FA9997100E03309 /* WordCell.swift in Sources */,
 				A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */,
-				A25141191FA84BFE00E03309 /* ThemeModel.swift in Sources */,
+				A251411D1FA97ABF00E03309 /* OperationAlphabets.swift in Sources */,
 				A2B183E91FA2ABC2006A88E3 /* QRViewController.swift in Sources */,
 				A25141171FA84BFE00E03309 /* DictionaryModel.swift in Sources */,
 			);
