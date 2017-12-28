@@ -26,10 +26,10 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let nibAlphabet = UINib(nibName: "AlphabetCell", bundle: nil)
-        self.alphabetsCollectionView.register(nibAlphabet, forCellWithReuseIdentifier: "alphabetCell")
         let nibWord = UINib(nibName: "WordCell", bundle: nil)
         self.wordTableView.register(nibWord, forCellReuseIdentifier: "wordCell")
+        let nibAlphabet = UINib(nibName: "AlphabetCell", bundle: nil)
+        self.alphabetsCollectionView.register(nibAlphabet, forCellWithReuseIdentifier: "alphabetCell")
         
         self.wordTableView.backgroundColor = UIColor.clear
         self.alphabetsCollectionView.backgroundColor = UIColor.clear
@@ -82,7 +82,26 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        let object = self.wordItem[indexPath.row]
+        print("word: \(object.word)")
+        print("meaning: \(object.meaning)")
+        self.showWordMeaning(word: object.word, meaning: object.meaning)
+        self.wordTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func showWordMeaning(word: String, meaning: String)
+    {
+        let alert = UIAlertController(title: word,
+                                      message: "意味：" + meaning,
+                                      preferredStyle: UIAlertControllerStyle.alert)
         
+        let closingAction = UIAlertAction(title: "閉じる",
+                                          style: UIAlertActionStyle.cancel,
+                                          handler: nil)
+        
+        alert.addAction(closingAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int
@@ -114,8 +133,18 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBAction func clearAction(_ sender: Any)
     {
+        if (self.combinAlphabets.count == 0)
+        {
+            return
+        }
         self.combinAlphabets = String(self.combinAlphabets[..<self.combinAlphabets.index(before: self.combinAlphabets.endIndex)])
         self.combinedLabel.text = self.combinAlphabets
+        if (self.combinAlphabets.count == 0)
+        {
+            self.wordItem = self.selectAllRealm()
+            self.wordTableView.reloadData()
+            return
+        }
         self.wordItem = self.selectFilterRealm(column: "word", condition: self.combinAlphabets)
         self.wordTableView.reloadData()
     }

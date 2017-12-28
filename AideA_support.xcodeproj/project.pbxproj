@@ -16,6 +16,7 @@
 		A251411D1FA97ABF00E03309 /* OperationAlphabets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */; };
 		A251415C1FA9997100E03309 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251415A1FA9997100E03309 /* WordCell.swift */; };
 		A251415D1FA9997100E03309 /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A251415B1FA9997100E03309 /* WordCell.xib */; };
+		A25141DA1FAFFC3500E03309 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25141D91FAFFC3500E03309 /* QRCode.swift */; };
 		A28F73351FA23ED6009C86CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F73341FA23ED6009C86CB /* AppDelegate.swift */; };
 		A28F733C1FA23ED6009C86CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28F733A1FA23ED6009C86CB /* Main.storyboard */; };
 		A28F733E1FA23ED6009C86CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28F733D1FA23ED6009C86CB /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAlphabets.swift; sourceTree = "<group>"; };
 		A251415A1FA9997100E03309 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		A251415B1FA9997100E03309 /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
+		A25141D91FAFFC3500E03309 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		A281D2AC1FA5FA2100283897 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73311FA23ED6009C86CB /* AideA_support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AideA_support.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28F73341FA23ED6009C86CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A21126B91FB3D2F8002C2671 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A25141131FA84BFE00E03309 /* DictionaryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A21126BA1FB3D32E002C2671 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
+				A251415B1FA9997100E03309 /* WordCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		A21126BB1FB3D3F0002C2671 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
+				A251415A1FA9997100E03309 /* WordCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		A28F73281FA23ED6009C86CB = {
 			isa = PBXGroup;
 			children = (
@@ -160,13 +188,12 @@
 				A28F733A1FA23ED6009C86CB /* Main.storyboard */,
 				A28F733F1FA23ED6009C86CB /* LaunchScreen.storyboard */,
 				A251411C1FA97ABF00E03309 /* OperationAlphabets.swift */,
+				A25141D91FAFFC3500E03309 /* QRCode.swift */,
 				A28F733D1FA23ED6009C86CB /* Assets.xcassets */,
-				A25141131FA84BFE00E03309 /* DictionaryModel.swift */,
 				A25141121FA84BFE00E03309 /* DictionaryDB.realm */,
-				A2B1842A1FA2BC62006A88E3 /* AlphabetCell.swift */,
-				A251415A1FA9997100E03309 /* WordCell.swift */,
-				A2B1842B1FA2BC62006A88E3 /* AlphabetCell.xib */,
-				A251415B1FA9997100E03309 /* WordCell.xib */,
+				A21126B91FB3D2F8002C2671 /* Models */,
+				A21126BB1FB3D3F0002C2671 /* CustomCells */,
+				A21126BA1FB3D32E002C2671 /* xib */,
 				A2B183E41FA2ABC1006A88E3 /* Makinas-Scrap-5.otf */,
 				A28F73421FA23ED6009C86CB /* Info.plist */,
 			);
@@ -494,6 +521,7 @@
 				A251415C1FA9997100E03309 /* WordCell.swift in Sources */,
 				A2B1842C1FA2BC62006A88E3 /* AlphabetCell.swift in Sources */,
 				A251411D1FA97ABF00E03309 /* OperationAlphabets.swift in Sources */,
+				A25141DA1FAFFC3500E03309 /* QRCode.swift in Sources */,
 				A2B183E91FA2ABC2006A88E3 /* QRViewController.swift in Sources */,
 				A25141171FA84BFE00E03309 /* DictionaryModel.swift in Sources */,
 			);
@@ -662,12 +690,15 @@
 			baseConfigurationReference = D6D47231A5252EC0FE6928A6 /* Pods-AideA_support.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DQ4H3V5PW;
 				INFOPLIST_FILE = AideA_support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NichibiAppCircle.AideA-support";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derapsen.AideA-support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -678,12 +709,15 @@
 			baseConfigurationReference = 0AE8A803599B598EC8F6BBD1 /* Pods-AideA_support.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DQ4H3V5PW;
 				INFOPLIST_FILE = AideA_support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NichibiAppCircle.AideA-support";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derapsen.AideA-support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
